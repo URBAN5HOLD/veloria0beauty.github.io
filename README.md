@@ -1,208 +1,69 @@
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="ar">
 <head>
 <meta charset="UTF-8">
-<title>H Y</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>جهاز البخار وإزالة الرؤوس السوداء</title>
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  /* إزالة أي خط تحت النص نهائياً */
-.card,
-.card *{
-  text-decoration: none !important;
-  border: none !important;
-}
-
-/* العناوين */
-.card h3{
-  font-family:'Playfair Display', serif;
-  font-style: arabe;
-  font-size:22px;
-  font-weight:500;
-  letter-spacing:0.03em;
-  color:#111;
-  margin-bottom:14px;
-}
-
-/* الوصف */
-.card p{
-  font-family:'Inter', sans-serif;
-  font-style: italic;
-  font-size:15px;
-  line-height:1.8;
-  color:#333;
-  text-decoration:none !important;
-}
-
-}
-
-
-body{
-  font-family:'Inter',sans-serif;
-  background:#fff;
-  color:#111;
-}
-
-
-.brand-logo{
-  font-family:'Playfair Display',serif;
-  font-size:44px;
-  font-weight:600;
-  letter-spacing:0.12em;
-  color:#000;
-}
-
-/* ===== SECTION ===== */
-section{
-  max-width:1200px;
-  margin:120px auto;
-  padding:0 20px;
-}
-
-.products{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:60px;
-}
-
-.products-bottom{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-}
-
-/* ===== CARD ===== */
-.card{
-  border-radius:18px;
-  overflow:hidden;
-  background:#f5f5f5;
-  box-shadow:0 30px 60px rgba(0,0,0,0.12);
-  transition:transform .5s ease, box-shadow .5s ease;
-}
-
-.card:hover{
-  transform:translateY(-10px);
-  box-shadow:0 45px 90px rgba(0,0,0,0.18);
-}
-
-.card img{
-  width:100%;
-  height:380px;
-  object-fit:contain;
-  display:block;
-}
-
-.card-content{
-  padding:26px;
-}
-
-.card h3{
-  font-family:'Playfair Display',serif;
-  font-size:22px;
-  margin-bottom:12px;
-}
-
-.card p{
-  font-size:15px;
-  line-height:1.7;
-  color:#333;
-}
-
-/* ===== WhatsApp BAR ===== */
-.whatsapp-bar{
-  background:#25D366;
-  text-align:center;
-  padding:16px;
-  font-weight:500;
-  letter-spacing:0.04em;
-  color:#fff;
-  transition:background .3s ease;
-}
-
-.card:hover .whatsapp-bar{
-  background:#1ebe5d;
-}
-
-/* ===== LINK RESET ===== */
-a{
-  text-decoration:none;
-  color:inherit;
-  display:block;
-}
-
-/* ===== RESPONSIVE ===== */
-@media(max-width:900px){
-  .products-bottom{
-    grid-template-columns:1fr;
-  }
-
-  .card img{
-   .card img{
-  width: 100%;
-  height: 300px;      /* هنا كتحدد الطول اللي بغيت */
-  object-fit: cover; /* كيقص الزائد بلا ما يشوّه الصورة */
-  display: block;
-}
-
-  }
-}
+  body {font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background-color:#f9f9f9; color:#333;}
+  .container {max-width: 800px; margin: auto; padding: 20px;}
+  header {text-align: center; padding: 40px 0;}
+  header h1 {font-size: 28px; color:#E91E63;}
+  .section {background: #fff; padding: 20px; margin: 20px 0; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+  .section img {max-width: 100%; border-radius: 10px;}
+  .btn {display: inline-block; padding: 15px 25px; margin-top: 20px; background-color: #E91E63; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;}
+  .testimonial {border-top: 1px solid #ddd; padding-top: 10px; margin-top: 10px;}
 </style>
 </head>
-
 <body>
+<div class="container">
 
-<section>
-  <div class="products">
+  <!-- Hero Section -->
+  <header>
+    <h1>جهاز البخار وإزالة الرؤوس السوداء</h1>
+  </header>
 
-    <!-- MAIN PRODUCT -->
-    <a href="https://wa.me/212691444558" class="card">
-      <img src="gel.jpg" alt="">
-      <div class="card-content">
-        <h3>Gel de fixation forte</h3>
-        <p>
-       A strong-hold styling product that gives your hair a firm, shiny look similar to a water-based pomade.
-Keeps your hairstyle in place all day without leaving any greasy residue
-and is suitable for daily use with a clean and easy application.
+  <!-- Product Images -->
+  <div class="section">
+    <h2>صور المنتج</h2>
+    <img src="product1.jpg" alt="جهاز البخار">
+    <img src="product2.jpg" alt="جهاز إزالة الرؤوس السوداء">
+  </div>
 
+  <!-- Product Details -->
+  <div class="section">
+    <h2>تفاصيل وفوائد المنتج</h2>
+    <ul>
+      <li>يفتح المسام بفعالية ويزيل الرؤوس السوداء.</li>
+      <li>يحسن ملمس البشرة ويتركها ناعمة ونضرة.</li>
+      <li>سهل الاستعمال وآمن لجميع أنواع البشرة.</li>
+    </ul>
+  </div>
 
-        </p>
-      </div>
-      <div class="whatsapp-bar">Order now via WhatsApp</div>
-    </a>
+  <!-- Before and After -->
+  <div class="section">
+    <h2>صور قبل وبعد الاستخدام</h2>
+    <img src="before.jpg" alt="قبل الاستخدام">
+    <img src="after.jpg" alt="بعد الاستخدام">
+  </div>
 
-    <!-- TWO PRODUCTS -->
-    <div class="products-bottom">
-
-      <a href="https://wa.me/212691444558" class="card">
-        <img src="spray.jpg" alt="">
-        <div class="card-content">
-          <h3>Fixation moyenne</h3>
-          <p>Medium hold that gives a natural style,
-doesn’t stiffen the hair too much, and keeps it neat and elegant.
-          </p>
-        </div>
-        <div class="whatsapp-bar">Order now via WhatsApp</div>
-      </a>
-
-      <a href="https://wa.me/212691444558" class="card">
-        <img src="wax.jpg" alt="">
-        <div class="card-content">
-          <h3>Fixation légère</h3>
-          <p>Very lightweight formula,
-maintains a natural look with medium hold,
-suitable for daily use.
-          </p>
-        </div>
-        <div class="whatsapp-bar">Order now via WhatsApp</div>
-      </a>
-
+  <!-- Testimonials -->
+  <div class="section">
+    <h2>آراء العملاء</h2>
+    <div class="testimonial">
+      <p>"جهاز رائع! بشرتي صارت نظيفة وناعمة بعد أول استعمال." – سلمى</p>
+    </div>
+    <div class="testimonial">
+      <p>"سهل الاستعمال والنتيجة مذهلة!" – ليلى</p>
     </div>
   </div>
-</section>
 
+  <!-- Order Section -->
+  <div class="section" style="text-align:center;">
+    <h2>اطلب الآن</h2>
+    <a href="https://wa.me/212XXXXXXXXX" class="btn">تواصل عبر WhatsApp</a>
+  </div>
+
+</div>
 </body>
 </html>
