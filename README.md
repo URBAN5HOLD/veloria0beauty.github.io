@@ -43,11 +43,27 @@
         .info-card h3 { color: var(--dark-pink); margin-bottom: 15px; font-size: 1.3rem; }
         .info-card p { font-size: 1.1rem; color: #555; max-width: 550px; margin: 0 auto; padding: 0 15px; }
 
-        /* ستايل الصور الثلاثة للمرايا */
-        .lighting-grid { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; padding: 0 10px; margin-top: 20px; }
-        .light-item { flex: 1; min-width: 100px; max-width: 150px; }
-        .light-item img { width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        .light-label { font-size: 13px; font-weight: bold; margin-top: 8px; color: #444; }
+        /* التعديل الجديد: تكبير مساحة صور الإضاءة */
+        .lighting-grid { 
+            display: flex; 
+            gap: 15px; 
+            justify-content: center; 
+            padding: 0 10px; 
+            margin-top: 25px;
+            overflow-x: auto; /* باش إلى كان التليفون صغير بزاف يقدر يسكروولي */
+        }
+        .light-item { 
+            flex: 1; 
+            min-width: 120px; /* كبرنا العرض الأدنى */
+            max-width: 200px; /* كبرنا العرض الأقصى */
+        }
+        .light-item img { 
+            width: 100%; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12); 
+            border: 2px solid #fff;
+        }
+        .light-label { font-size: 14px; font-weight: bold; margin-top: 10px; color: var(--dark-pink); }
 
         .reviews-container { background: var(--main-pink); padding: 40px 15px; }
         .review-card {
@@ -125,7 +141,7 @@
             </div>
         </div>
 
-        <p style="margin-top: 20px; font-size: 1rem; color: #555;">
+        <p style="margin-top: 25px; font-size: 1.1rem; color: #555;">
             المرآة تعمل باللمس، قابلة لإعادة الشحن (USB) ويمكن فصلها عن الحقيبة تماماً لاستعمالها بشكل مستقل في أي مكان.
         </p>
     </div>
