@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VELORIA BEAUTY - عرض خاص</title>
+    <title>VELORIA BEAUTY - الحقيبة الذكية</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -15,17 +16,16 @@
         * { box-sizing: border-box; }
         body { font-family: 'Cairo', sans-serif; margin: 0; padding: 0; background-color: #fff; text-align: center; line-height: 1.6; color: #333; }
 
-        /* الهيدر الجديد مع اللوغو */
+        /* الهيدر مع اللوغو */
         .brand-header {
             padding: 20px 0;
             background-color: #fff;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             border-bottom: 1px solid #f8f8f8;
         }
-        .brand-logo { width: 70px; height: auto; margin-bottom: 8px; border-radius: 50%; }
+        .brand-logo { width: 75px; height: auto; margin-bottom: 8px; border-radius: 50%; }
         .brand-name { font-size: 22px; font-weight: bold; color: var(--dark-pink); letter-spacing: 2px; }
 
         .promo-bar { background: var(--black); color: #fff; padding: 12px; font-weight: bold; width: 100%; font-size: 14px; }
@@ -58,10 +58,10 @@
 
         .show-more-btn {
             background: #fff; border: 1.5px solid var(--dark-pink); color: var(--dark-pink);
-            padding: 12px 30px; border-radius: 30px; cursor: pointer; margin: 25px 0; font-weight: bold; font-size: 16px;
+            padding: 12px 30px; border-radius: 30px; cursor: pointer; margin: 25px 0; font-weight: bold;
         }
 
-        .final-proof { padding: 50px 15px; background: #fff; border-top: 2px solid var(--main-pink); }
+        .final-proof { padding: 50px 15px; background: #fff; }
 
         .sticky-footer { 
             position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; 
@@ -72,7 +72,6 @@
             background: var(--green-wa); color: #fff; width: 88%; max-width: 380px; 
             padding: 18px; border-radius: 50px; text-decoration: none; font-weight: bold; 
             font-size: 1.4rem; display: block; margin: 0 auto; animation: pulse 2.5s infinite; 
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
         }
 
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.04); } 100% { transform: scale(1); } }
@@ -94,36 +93,36 @@
     </div>
 
     <section class="hero">
-        <h1>احصلي على شعر حريري في أقل من 5 دقائق ✨</h1>
-        <img src="1.jpg" class="hero-img" alt="الصورة الرئيسية">
+        <h1>استوديو جمال متنقل: حقيبة الماكياج الذكية ✨</h1>
+        <img src="1.jpg" class="hero-img" alt="حقيبة الماكياج">
         <div class="price-box">
-            <span style="text-decoration: line-through; color: #999; font-size: 20px;">499 درهم</span><br>
-            <span class="new-price">249 درهم فقط</span><br>
-            <span class="badge">تخفيض محدود 50%-</span>
+            <span style="text-decoration: line-through; color: #999; font-size: 20px;">598 درهم</span><br>
+            <span class="new-price">299 درهم فقط</span><br>
+            <span class="badge">عرض المجموعة المتكاملة (الحقيبة + العلبة)</span>
         </div>
     </section>
 
     <div class="info-card">
-        <h3>سهل الاستعمال واحترافي 💆‍♀️</h3>
-        <img src="2.jpg" class="hero-img" alt="شرح 1">
-        <p>بلا ما تحتاجي تمشي للصالون، هاد المشط كيسخن فـ 30 ثانية وكيسرح ليك شعرك من الدوزة اللولة بكل سهولة.</p>
+        <h3>مرآة ذكية بـ 3 مستويات إضاءة 💡</h3>
+        <img src="2.jpg" class="hero-img" alt="مرآة ليد">
+        <p>تمتعي بإضاءة احترافية أينما كنتِ! حقيبة فيلوريا مزودة بمرآة LED تعمل باللمس، بـ 3 ألوان (أبيض، دافئ، وطبيعي). المرآة قابلة لإعادة الشحن (USB) ويمكن فصلها عن الحقيبة تماماً لاستعمالها بشكل مستقل.</p>
     </div>
 
     <div class="info-card">
-        <h3>حماية فائقة لشعرك 🔥</h3>
-        <img src="3.jpg" class="hero-img" alt="شرح 2">
-        <p>تقنية السيراميك المتطورة كتحمي شعرك من الحرارة الزايدة وكتخليه ديما كيلمع وصحي النهار كامل.</p>
+        <h3>تنظيم مثالي لمجوهراتك 💍</h3>
+        <img src="3.jpg" class="hero-img" alt="علبة المجوهرات">
+        <p>علبة مجوهرات أنيقة مقسمة بذكاء لتنظيم الخواتم، السلاسل، والحلقات. حجم مثالي يوضع داخل الحقيبة أو يستعمل بشكل منفصل في السفر.</p>
     </div>
 
     <section class="reviews-container">
-        <h2>شنو قالو البنات على المنتج ديالنا؟ ⭐</h2>
+        <h2>شنو قالو البنات على المجموعة ديالنا؟ ⭐</h2>
 
         <div class="review-card">
             <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=150" class="profile-img">
             <div style="flex:1;">
                 <div class="stars">⭐⭐⭐⭐⭐</div>
-                <span class="review-name">سناء - الدار البيضاء</span>
-                <p style="font-size:14px; margin:5px 0; color: #444;">بصراحة واعر بزااااف، هناني من السيشوار وتمارة ديالو ❤️</p>
+                <span class="review-name">نهيلة - الرباط</span>
+                <p style="font-size:14px; margin:5px 0; color: #444;">أحسن حاجة فهاد الحقيبة هي ديك المرايا! الإضاءة ديالها واعرة بزااف، والدرجات بـ3 كايخليوك تقادي الماكياج بدقة ❤️</p>
             </div>
         </div>
 
@@ -131,26 +130,26 @@
             <img src="https://images.pexels.com/photos/718978/pexels-photo-718978.jpeg?auto=compress&cs=tinysrgb&w=150" class="profile-img">
             <div style="flex:1;">
                 <div class="stars">⭐⭐⭐⭐⭐</div>
-                <span class="review-name">ليلى - طنجة</span>
-                <p style="font-size:14px; margin:5px 0; color: #444;">وصلني اليوم، السلعة جودة عالية والتوصيل كان سريع 👍</p>
+                <span class="review-name">إلهام - الدار البيضاء</span>
+                <p style="font-size:14px; margin:5px 0; color: #444;">عجبني بزااف أن المرايا كتحيد وكتشارجا بـ USB. الحقيبة والعلبة ديال الجواهر جاو طوب وكيبانو كلاس 👍</p>
             </div>
         </div>
 
         <div class="review-card">
             <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=150" class="profile-img">
             <div style="flex:1;">
-                <div class="stars">⭐⭐⭐⭐</div>
-                <span class="review-name">مريم - مراكش</span>
-                <p style="font-size:14px; margin:5px 0; color: #444;">زوين بزاف، النتيجة عجباتني من أول استعمال وكيبرد القلب.</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <span class="review-name">سلمى - فاس</span>
+                <p style="font-size:14px; margin:5px 0; color: #444;">المرايا ليد اللي فيها بـ Touch كتحمق، والضوء الساطع كيبين كاع التفاصيل. الحقيبة واسعة كتهز كولشي ✨</p>
             </div>
         </div>
 
         <div class="review-card">
             <img src="https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=150" class="profile-img">
             <div style="flex:1;">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <span class="review-name">خديجة</span>
-                <p style="font-size:14px; margin:5px 0; color: #444;">خديت جوج ليا ولختي، عجبنا بزااف مكيحرقش الشعر 🎀</p>
+                <div class="stars">⭐⭐⭐⭐</div>
+                <span class="review-name">إيمان - طنجة</span>
+                <p style="font-size:14px; margin:5px 0; color: #444;">السلعة واصلة كيفما فالصور. الحقيبة جاتني كبر شوية من داكشي لي تخيلت وهذا رباح، والجودة خلاتني مماندماناش 👌</p>
             </div>
         </div>
 
@@ -158,17 +157,18 @@
             <div class="review-card">
                 <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150" class="profile-img">
                 <div style="flex:1;">
-                    <div class="stars">⭐⭐⭐⭐⭐</div><span class="review-name">إيمان</span><p style="font-size:14px; margin:5px 0;">طوب طوب كنصحكم بيه البنات 👌</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div><span class="review-name">مريم - طنجة</span>
+                    <p style="font-size:14px; margin:5px 0; color: #444;">صدماتني الجودة ديال المرايا والإضاءة ديالها. أحسن كادو تقدري تعطيه لشي عروسة أو لراسك!</p>
                 </div>
             </div>
-            </div>
+        </div>
 
         <button class="show-more-btn" id="showMore" onclick="toggleReviews()">قراءة المزيد من الآراء</button>
     </section>
 
     <section class="final-proof">
         <h2>طلبيات زبوناتنا الوفيات 📸</h2>
-        <img src="4.jpg" class="hero-img" alt="صورة حقيقية للمنتج">
+        <img src="4.jpg" class="hero-img" alt="صورة الطلبية">
         <p>فيلوريا تضمن لك الجودة والمصداقية في كل طلبية.</p>
     </section>
 
