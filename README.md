@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -32,11 +31,12 @@
         .light-item img { width: 100%; border-radius: 12px; border: 2px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
         .light-label { font-size: 11px; font-weight: bold; margin-top: 5px; color: var(--dark-pink); }
 
-        .mirror-details { padding: 25px 15px; background: #fffafb; margin: 20px 20px; border-radius: 15px; border: 1px dashed var(--dark-pink); }
-        .mirror-details h4 { color: var(--dark-pink); margin-top: 0; }
-        .mirror-details ul { text-align: right; display: inline-block; padding: 0; margin: 0; list-style: none; }
-        .mirror-details li { margin-bottom: 8px; font-size: 14px; }
-        .mirror-details li::before { content: "✓ "; color: var(--dark-pink); font-weight: bold; }
+        /* ستايلات المميزات (المرايا والعلبة) */
+        .feature-details { padding: 25px 15px; background: #fffafb; margin: 20px 20px; border-radius: 15px; border: 1px dashed var(--dark-pink); }
+        .feature-details h4 { color: var(--dark-pink); margin-top: 0; }
+        .feature-details ul { text-align: right; display: inline-block; padding: 0; margin: 0; list-style: none; }
+        .feature-details li { margin-bottom: 8px; font-size: 14px; }
+        .feature-details li::before { content: "✓ "; color: var(--dark-pink); font-weight: bold; }
 
         .modal { display: none; position: fixed; z-index: 20000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); justify-content: center; align-items: center; cursor: pointer; }
         .modal-content { max-width: 95%; max-height: 85%; border-radius: 10px; cursor: default; }
@@ -54,7 +54,7 @@
 
         .reviews-container { background: var(--main-pink); padding: 40px 15px; }
         .review-card { background: #fff; padding: 15px; border-radius: 15px; margin: 12px auto; width: 100%; max-width: 500px; text-align: right; display: flex; gap: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.04); }
-        .profile-img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
+        .profile-img { width: 55px; height: 55px; border-radius: 50%; object-fit: cover; border: 2px solid var(--main-pink); }
         .stars { color: #ffc107; font-size: 12px; }
 
         .btn-outline { background: #fff; border: 1.5px solid var(--dark-pink); color: var(--dark-pink); padding: 10px 25px; border-radius: 30px; cursor: pointer; margin: 20px 0; font-weight: bold; }
@@ -86,6 +86,7 @@
             <span class="new-price">279 درهم فقط</span><br>
             <span class="badge">أطلبي الآن واستفيدي من عرض 50%-</span>
         </div>
+        <p style="font-weight: bold; color: #444; margin-top: 10px;">✨ حقيبة واسعة بـ "فواصل ذكية" تقدري تشكلي مساحتها وتصغريها كيفما بغيتي على حساب ماكياجك!</p>
     </section>
 
     <div class="info-card">
@@ -96,7 +97,7 @@
             <div class="light-item" onclick="openModal('light3.jpg')"><img src="light3.jpg"><div class="light-label">أبيض ناصع</div></div>
         </div>
 
-        <div class="mirror-details">
+        <div class="feature-details">
             <h4>تفاصيل ومميزات المرآة:</h4>
             <ul>
                 <li><strong>إضاءة LED ذكية:</strong> 3 مستويات من الإضاءة كتحكمي فيها باللمس.</li>
@@ -114,23 +115,32 @@
     <div class="info-card">
         <h3>نظمي مجوهراتك بكل أناقة 💍</h3>
         <img src="3.jpg" class="hero-img" alt="علبة المجوهرات" onclick="openModal(this.src)">
-        <p>العلبة مصممة باش تحافظي على الخواتم والسلاسل ديالك من الضياع، ومصنوعة من مواد كتحميها من الخدوش.</p>
+        
+        <div class="feature-details">
+            <h4>مميزات علبة المجوهرات:</h4>
+            <ul>
+                <li><strong>تنظيم ذكي:</strong> مقسمة للخواتم، السلاسل، والحلقات باش ما يتلفوش ليك.</li>
+                <li><strong>حجم مثالي:</strong> كتجي وسط الحقيبة وما كتاخدش مساحة كبيرة.</li>
+                <li><strong>حماية فائقة:</strong> مغلفة بمادة رطبة من الداخل كتحمي المجوهرات من الخدوش.</li>
+                <li><strong>تصميم أنيق:</strong> تقدري تهزيها معاك بوحدها فالمناسبات أو السفر.</li>
+            </ul>
+        </div>
     </div>
 
     <section class="faq-section">
         <h2 class="faq-title">أسئلة كيسولوها البنات 🤔</h2>
         <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">واش بصح التوصيل فابور؟</div><div class="faq-answer">نعم أختي، التوصيل مجاني لجميع المدن المغربية والدفع حتى كتوصلك الأمانة.</div></div>
-        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">شحال كيبقى شحن المرآة؟</div><div class="faq-answer">البطارية قوية بزاف، تقدري تخدمي بها حتى لـ 10 أيام من الاستعمال العادي بشحنة وحدة.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">شحال كيبقى شحن المرآة؟</div><div class="faq-answer">البطارية قوية بزاف، تقدري تخدمي بها حتى لـ 10 أيام بشحنة وحدة.</div></div>
         <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">إلى وصلاتني ولقيت فيها شي مشكل؟</div><div class="faq-answer">عندنا ضمان الجودة! إلى كان أي عيب، كنبدلوها ليك فوراً أو كنرجعو ليك فلوسك.</div></div>
         <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">واش الحقيبة والعلبة كيجيو مجموعين؟</div><div class="faq-answer">نعم، العرض كيشمل الحقيبة الذكية + علبة المجوهرات + كابل الشحن بـ 279 درهم فقط.</div></div>
-        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">واش الحقيبة جلد؟</div><div class="faq-answer">نعم، المادة الخارجية من الجلد الاصطناعي الفاخر، ساهل في التنظيف وكيحمي المحتويات من الصدمات.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">واش الحقيبة جلد؟</div><div class="faq-answer">نعم، المادة الخارجية من الجلد الاصطناعي الفاخر، ساهل في التنظيف وكيحمي المحتويات.</div></div>
 
         <div class="extra-content" id="extraFaq">
             <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">شحال كياخد التوصيل من وقت؟</div><div class="faq-answer">بين 24 و 48 ساعة كحد أقصى كيكون الطلب عندك.</div></div>
-            <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">واش نقدر نغسل الحقيبة؟</div><div class="faq-answer">يفضل تمسحيها غير بقطعة قماش مبللة باش تحافظي على الجلد والدوائر الكهربائية ديال المرايا.</div></div>
-            <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">واش المرايا فيها ألوان بزاف؟</div><div class="faq-answer">فيها 3 ديال الدرجات (أبيض طبيعي، أصفر دافئ، وأبيض ناصع) باش تختاري الإضاءة اللي كترتاحي فيها.</div></div>
-            <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">واش العلبة د المجوهرات كتهز بزاف؟</div><div class="faq-answer">نعم، فيها بلايص مخصصين للخواتم والسلاسل والحلقات ومقسمة بذكاء.</div></div>
-            <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">كيفاش نطلب العرض؟</div><div class="faq-answer">كليكي على زر الواتساب التحت، صيفطي المعلومات ديالك وحنا نتواصلو معك نأكدو الطلبية.</div></div>
+            <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">واش نقدر نغسل الحقيبة؟</div><div class="faq-answer">يفضل تمسحيها غير بقطعة قماش مبللة باش تحافظي على الجلد والدوائر الكهربائية.</div></div>
+            <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">واش المرايا فيها ألوان بزاف؟</div><div class="faq-answer">فيها 3 ديال الدرجات (أبيض طبيعي، أصفر دافئ، وأبيض ناصع).</div></div>
+            <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">واش العلبة د المجوهرات كتهز بزاف؟</div><div class="faq-answer">نعم، مقسمة بذكاء باش تهز ليك كاع السلاسل والخواتم اللي كتحتاجي.</div></div>
+            <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">كيفاش نطلب العرض؟</div><div class="faq-answer">كليكي على زر الواتساب التحت، صيفطي المعلومات ديالك وحنا نتواصلو معك.</div></div>
         </div>
         <button class="btn-outline" id="btnFaq" onclick="toggleMore('extraFaq', 'btnFaq', 'أسئلة')">إظهار المزيد من الأسئلة</button>
     </section>
@@ -138,33 +148,33 @@
     <section class="reviews-container">
         <h2>آراء البنات اللي جربوا المجموعة ⭐</h2>
         <div class="review-card">
-            <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=150" class="profile-img">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Nora&eyebrows=flatNatural&hair=longCurvy&skinColor=edb98a" class="profile-img" alt="نهيلة">
             <div style="flex:1;"><div class="stars">⭐⭐⭐⭐⭐</div><span style="font-weight:bold">نهيلة - الرباط</span><p style="font-size:14px; margin:5px 0;">المرايا واعرة والضوء فيها مجهد كيعاون فالمكياج. العلبة د المجوهرات نفعاتني بزاف في التنظيم!</p></div>
         </div>
         <div class="review-card">
-            <img src="https://images.pexels.com/photos/718978/pexels-photo-718978.jpeg?auto=compress&cs=tinysrgb&w=150" class="profile-img">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sara&eyebrows=defaultNatural&hair=bigHair&skinColor=f8d25c" class="profile-img" alt="إلهام">
             <div style="flex:1;"><div class="stars">⭐⭐⭐⭐⭐</div><span style="font-weight:bold">إلهام - كازا</span><p style="font-size:14px; margin:5px 0;">جودة طوب! الحقيبة كتهز بزاف والعلبة د الخواتم كيجيو فيها مستفين. شكراً فيلوريا.</p></div>
         </div>
         <div class="review-card">
-            <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=150" class="profile-img">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Mariam&eyebrows=flatNatural&hair=straight02&skinColor=edb98a" class="profile-img" alt="سلمى">
             <div style="flex:1;"><div class="stars">⭐⭐⭐⭐⭐</div><span style="font-weight:bold">سلمى - فاس</span><p style="font-size:14px; margin:5px 0;">أحسن باك خديت هاد العام، المرايا كتحيد وهادشي نفعني بزاف فالسفر. العلبة الصغيرة كلاس بزااف.</p></div>
         </div>
 
         <div class="extra-content" id="extraReviews">
             <div class="review-card">
-                <img src="https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=150" class="profile-img">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Fatima&eyebrows=defaultNatural&hair=longCurvy&skinColor=f8d25c" class="profile-img">
                 <div style="flex:1;"><div class="stars">⭐⭐⭐⭐⭐</div><span style="font-weight:bold">إيمان - طنجة</span><p style="font-size:14px; margin:5px 0;">السلعة واصلة كيفما فالصور تماماً. المرايا كتشارجا دغيا وكتصبر، والحقيبة الجلد ديالها رطب وزوين.</p></div>
             </div>
             <div class="review-card">
-                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150" class="profile-img">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Hafsa&eyebrows=flatNatural&hair=bigHair&skinColor=edb98a" class="profile-img">
                 <div style="flex:1;"><div class="stars">⭐⭐⭐⭐⭐</div><span style="font-weight:bold">مريم - مراكش</span><p style="font-size:14px; margin:5px 0;">بصراحة صدماتني الجودة! الحقيبة متينة وكتحمي الماكياج والمرايا فيها إضاءة بروفيسيونال.</p></div>
             </div>
             <div class="review-card">
-                <img src="https://images.pexels.com/photos/1845208/pexels-photo-1845208.jpeg?auto=compress&cs=tinysrgb&w=150" class="profile-img">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Zineb&eyebrows=defaultNatural&hair=straight02&skinColor=f8d25c" class="profile-img">
                 <div style="flex:1;"><div class="stars">⭐⭐⭐⭐⭐</div><span style="font-weight:bold">حنان - أكادير</span><p style="font-size:14px; margin:5px 0;">تعامل راقي وتوصيل سريع. الحقيبة والعلبة جاو مجموعين ومقادين، عجبوني بزاف كهدية.</p></div>
             </div>
             <div class="review-card">
-                <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150" class="profile-img">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Kawtar&eyebrows=flatNatural&hair=longCurvy&skinColor=edb98a" class="profile-img">
                 <div style="flex:1;"><div class="stars">⭐⭐⭐⭐⭐</div><span style="font-weight:bold">كوثر - القنيطرة</span><p style="font-size:14px; margin:5px 0;">المرآة ذكية بزاف، نفعاتني حيت كنقدر نحيدها ونخدم بها برا الحقيبة. شكراً ليكم.</p></div>
             </div>
         </div>
@@ -172,9 +182,9 @@
     </section>
 
     <section class="final-proof">
-        <h2>توصيل سريع ومضمون في أقل من 24 ساعة 🚀</h2>
+        <h2>توصيل سريع ومضمون 🚀</h2>
         <img src="4.jpg" class="hero-img" alt="توصيل سريع" onclick="openModal(this.src)">
-        <p>فيلوريا تضمن لك جودة عالية وتوصيل سريع لجميع مدن المغرب مع إمكانية فحص المنتوج قبل الدفع.</p>
+        <p>فيلوريا تضمن لك جودة عالية وتوصيل سريع لجميع مدن المغرب.</p>
     </section>
 
     <div class="spacer"></div>
