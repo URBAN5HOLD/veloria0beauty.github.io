@@ -31,7 +31,6 @@
         .light-item img { width: 100%; border-radius: 12px; border: 2px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
         .light-label { font-size: 11px; font-weight: bold; margin-top: 5px; color: var(--dark-pink); }
 
-        /* ستايلات المميزات (المرايا والعلبة) */
         .feature-details { padding: 25px 15px; background: #fffafb; margin: 20px 20px; border-radius: 15px; border: 1px dashed var(--dark-pink); }
         .feature-details h4 { color: var(--dark-pink); margin-top: 0; }
         .feature-details ul { text-align: right; display: inline-block; padding: 0; margin: 0; list-style: none; }
@@ -82,9 +81,9 @@
     <section class="hero">
         <img src="1.jpg" class="hero-img" alt="حقيبة الماكياج" onclick="openModal(this.src)">
         <div class="price-box">
-            <span style="text-decoration: line-through; color: #999; font-size: 20px;">419 درهم</span><br>
-            <span class="new-price">279 درهم فقط</span><br>
-            <span class="badge">أطلبي الآن واستفيدي من عرض 50%-</span>
+            <span style="text-decoration: line-through; color: #999; font-size: 20px;">479 درهم</span><br>
+            <span class="new-price">319 درهم فقط</span><br>
+            <span class="badge">أطلبي الآن واستفيدي من عرض محدود</span>
         </div>
         <p style="font-weight: bold; color: #444; margin-top: 10px;">✨ حقيبة واسعة بـ "فواصل ذكية" تقدري تشكلي مساحتها وتصغريها كيفما بغيتي على حساب ماكياجك!</p>
     </section>
@@ -132,7 +131,7 @@
         <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">واش بصح التوصيل فابور؟</div><div class="faq-answer">نعم أختي، التوصيل مجاني لجميع المدن المغربية والدفع حتى كتوصلك الأمانة.</div></div>
         <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">شحال كيبقى شحن المرآة؟</div><div class="faq-answer">البطارية قوية بزاف، تقدري تخدمي بها حتى لـ 10 أيام بشحنة وحدة.</div></div>
         <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">إلى وصلاتني ولقيت فيها شي مشكل؟</div><div class="faq-answer">عندنا ضمان الجودة! إلى كان أي عيب، كنبدلوها ليك فوراً أو كنرجعو ليك فلوسك.</div></div>
-        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">واش الحقيبة والعلبة كيجيو مجموعين؟</div><div class="faq-answer">نعم، العرض كيشمل الحقيبة الذكية + علبة المجوهرات + كابل الشحن بـ 279 درهم فقط.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">واش الحقيبة والعلبة كيجيو مجموعين؟</div><div class="faq-answer">نعم، العرض كيشمل الحقيبة الذكية + علبة المجوهرات + كابل الشحن بـ 319 درهم فقط.</div></div>
         <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">واش الحقيبة جلد؟</div><div class="faq-answer">نعم، المادة الخارجية من الجلد الاصطناعي الفاخر، ساهل في التنظيف وكيحمي المحتويات.</div></div>
 
         <div class="extra-content" id="extraFaq">
